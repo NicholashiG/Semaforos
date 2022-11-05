@@ -6,10 +6,10 @@ public class Usuario extends Thread {
 	Database db;
 	int accion;
 
-	public Usuario(String nombre, Database restaurante, int accion) {
+	public Usuario(String nombre, Database db, int accion) {
 		super(nombre);
 		this.nombre = nombre;
-		this.db = restaurante;
+		this.db = db;
 		this.accion = accion;
 	}
 

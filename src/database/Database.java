@@ -5,9 +5,9 @@ public class Database {
 	private String nombre;
 	GestorIngresos gestorIngresos;
 
-	public Database(String nombre, int aforo) {
+	public Database(String nombre, int cantidadVisualizadores) {
 		this.nombre = nombre;
-		this.gestorIngresos = new GestorIngresos(aforo);
+		this.gestorIngresos = new GestorIngresos(cantidadVisualizadores);
 	}
 
 	public String getNombre() {
